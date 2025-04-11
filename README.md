@@ -11,4 +11,7 @@
 - prettier
     - prettier-plugin-tailwindcss
 - tailwind
+
     - tailwindcss/forms
+
+- https://github.com/alan2207/bulletproof-react

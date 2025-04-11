@@ -32,7 +32,6 @@ export default tseslint.config(
 			"react-hooks": reactHooks,
 			"react-refresh": reactRefresh,
 			importPlugin,
-
 		},
 		rules: {
 			...reactHooks.configs.recommended.rules,
