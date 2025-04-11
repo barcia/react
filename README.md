@@ -11,3 +11,4 @@
 - prettier
     - prettier-plugin-tailwindcss
 - tailwind
+    - tailwindcss/forms
