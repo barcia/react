@@ -1,4 +1,7 @@
 # React + TypeScript + Vite
 
+- eslint
+    - eslint-config-prettier
 - prettier
-- eslint-config-prettier
+    - prettier-plugin-tailwindcss
+- tailwind
