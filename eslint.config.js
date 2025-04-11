@@ -45,6 +45,9 @@ export default tseslint.config(
 			"import/resolver": {
 				typescript: {
 					project: "./tsconfig.json",
+					alias: {
+						"@": "./src",
+					},
 				},
 			},
 		},
