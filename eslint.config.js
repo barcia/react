@@ -4,9 +4,10 @@ import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 import importPlugin from "eslint-plugin-import";
 import tseslint from "typescript-eslint";
-import prettier from "eslint-config-prettier";
 import jsxA11y from "eslint-plugin-jsx-a11y";
 import unicorn from "eslint-plugin-unicorn";
+import pluginQuery from "@tanstack/eslint-plugin-query";
+
 export default tseslint.config(
 	{ ignores: ["dist"] },
 	{
@@ -17,6 +18,7 @@ export default tseslint.config(
 			importPlugin.flatConfigs.recommended,
 			jsxA11y.flatConfigs.strict,
 			unicorn.configs.recommended,
+			...pluginQuery.configs['flat/recommended']
 		],
 		files: ["**/*.{ts,tsx}"],
 		languageOptions: {
@@ -45,8 +47,10 @@ export default tseslint.config(
 			"import/resolver": {
 				typescript: {
 					project: "./tsconfig.json",
+
 					alias: {
-						"@": "./src",
+						find: "@",
+						replacement: "./src",
 					},
 				},
 			},
