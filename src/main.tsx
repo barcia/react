@@ -1,13 +1,22 @@
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./main.css";
-import App from "./app";
+import { Route, Switch } from "@/lib/wouter";
+import "./index.css";
+import NotFound from "@/pages/404";
+import routes from "@/routes";
 
-const rootElement = document.querySelector("#root");
+const rootElement = document.getElementById("root");
 if (!rootElement) throw new Error("Root element not found");
 
 createRoot(rootElement).render(
-	<StrictMode>
-		<App />
-	</StrictMode>,
+  <Switch>
+    {Object.values(routes).map(({ path, component: Component }) => (
+      <Route key={path} path={path}>
+        <Component />
+      </Route>
+    ))}
+    {/* 404 opcional */}
+    <Route>
+      <NotFound />
+    </Route>
+  </Switch>
 );

@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@layer base {
+	body {
+		min-height: 100dvh;
+	}
+	summary {
+		@apply list-none;
+	}
+}
