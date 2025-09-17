@@ -7,8 +7,9 @@ Uses **PNPM** as package manager and requires **Node.js 24 or higher**.
 ## Getting Started
 
 ```bash
-pnpm install
-pnpm dev
+corepack enable
+pnpm install --frozen-lockfile
+pnpm run dev
 ```
 
 ## Stack
