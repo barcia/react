@@ -14,8 +14,8 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@tanstack/react-query": "5.90.2",
-		"nuqs": "2.7.1",
+		"@tanstack/react-query": "5.90.5",
+		"nuqs": "2.7.2",
 		"react": "19.2.0",
 		"react-dom": "19.2.0",
 		"wouter": "3.7.1",
@@ -25,13 +25,13 @@
 		"@biomejs/biome": "2.2.6",
 		"@tailwindcss/vite": "4.1.14",
 		"@types/react": "19.2.2",
-		"@types/react-dom": "19.2.1",
+		"@types/react-dom": "19.2.2",
 		"@vitejs/plugin-react": "5.0.4",
 		"globals": "16.4.0",
 		"lightningcss": "1.30.2",
 		"tailwindcss": "4.1.14",
 		"typescript": "5.9.3",
-		"vite": "7.1.9",
+		"vite": "7.1.10",
 		"zod": "4.1.12"
 	},
 	"packageManager": "pnpm@10.16.1+sha512.0e155aa2629db8672b49e8475da6226aa4bdea85fdcdfdc15350874946d4f3c91faaf64cbdc4a5d1ab8002f473d5c3fcedcd197989cf0390f9badd3c04678706"
